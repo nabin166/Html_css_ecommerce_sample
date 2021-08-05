@@ -48,3 +48,11 @@ a:hover{
     color: rgb(84, 103, 104);
 }
 
+::-webkit-scrollbar{
+
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    width: 0px;
+}
+
