@@ -55,4 +55,28 @@ a:hover{
 ::-webkit-scrollbar-thumb{
     width: 0px;
 }
+@media(max-width:1153px){.shown{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    align-items: center;
+}}
 
+@media(max-width:994px){.shown{
+    display: grid;
+    grid-template-columns: auto auto auto  ;
+    align-items: center;
+}}
+
+@media(max-width:596px){.shown{
+    display: grid;
+    grid-template-columns:auto auto ;
+    align-items: center;
+    max-height: min-content;
+    max-width: min-content;
+}}
+@media(max-width:400px){.shown{
+    display: grid;
+    grid-template-columns:auto  ;
+    align-items: center;
+ 
+}}

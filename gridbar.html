@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+
+    <div class="head">
+        <div id="item1"
+            style="background-image: url(https://images.pexels.com/photos/8624308/pexels-photo-8624308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); background-size: cover; background-position: center;  justify-content: center; ">
+            <img src="background-image: url(https://images.pexels.com/photos/8624308/pexels-photo-8624308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);"
+                alt=""></div>
+        <div id="item2"
+            style="background-image: url(https://images.pexels.com/photos/8411416/pexels-photo-8411416.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  background-size: cover; background-position: center; ">
+            item2</div>
+        <div id="item3" style="background-color: rgb(32, 44, 44); display: inline-flex; justify-content: center;">
+            <ul class="navbar-nav  ">
+                <li class="nav-item row" style="width: 12.5rem;">
+                    <a class="px-4 active "
+                        style=" color: bisque; text-decoration: none;    text-align: center;border-radius:20px; border-style: solid; border-width: 2px;"
+                        href="index.html">Gears</a>
+                    <a class="px-4" style="color: bisque; text-decoration: none;" href="gearspackage.html">Gears
+                        Package</a>
+                    <a class="px-4" style="color: bisque; text-decoration: none;" href="blog.html">Blog</a>
+                    <a class="px-4" style="color: beige; text-decoration: none;" href="book.html">Trip Booking</a>
+
+                    <a class="px-4" style="color:bisque; text-decoration: none;" href="gridbar.html">About
+                        us</a>
+                    <a class="px-4" style="color:bisque; text-decoration: none;" href="#">Contact_us
+                    </a>
+
+                    <style>
+                        a:hover {
+                            border-radius: 1.25rem;
+                            border-style: solid;
+                            border-width: 0.125rem;
+
+                        }
+                    </style>
+
+                </li>
+
+
+
+            </ul>
+        </div>
+        <div id="item4"
+            style="background-image: url(https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  background-size: cover; background-position: center; ">
+            hello </div>
+        <div id="item5"
+            style="background-image: url(https://images.pexels.com/photos/691637/pexels-photo-691637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  background-size: cover; background-position: center; ">
+            hello </div>
+        <div id="item6"
+            style="background-image: url(https://images.pexels.com/photos/4413755/pexels-photo-4413755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);  background-size: cover; background-position: center; ">
+            hello </div>
+        <div id="item7"
+            style="background-image: url(https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ; background-size: cover; background-position: center; ">
+            hello </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+
+<style>
+    .head {
+        display: grid;
+        text-align: center;
+
+
+
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "item1 item2 item3 item3 "
+            "item4 item5 item6 item6"
+            "item7 item5 item6 item6";
+
+
+
+    }
+
+    #item1 {
+        grid-area: item1;
+        margin: 2px;
+        border-radius: 5px;
+
+    }
+
+    #item2 {
+        grid-area: item2;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    #item3 {
+        grid-area: item3;
+        margin: 2px;
+        border-radius: 5px;
+
+    }
+
+    #item4 {
+        grid-area: item4;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    #item5 {
+        margin: 2px;
+        border-radius: 5px;
+        grid-area: item5;
+    }
+
+    #item6 {
+        grid-area: item6;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    #item7 {
+        grid-area: item7;
+        margin: 2px;
+        border-radius: 5px;
+    }
+
+    @media (max-width:500px) {
+        .head {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+
+
+
+
+        }
+
+        #item1 {
+            height: 100px;
+            margin: 2px;
+            border-radius: 5px;
+
+        }
+
+        #item2 {
+            height: 100px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+
+        #item3 {
+            height: 200px;
+            margin: 2px;
+            border-radius: 5px;
+
+        }
+
+        #item4 {
+            height: 100px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+
+        #item5 {
+            height: 100px;
+            border-radius: 5px;
+            grid-area: item5;
+        }
+
+        #item6 {
+            height: 400px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+
+        #item7 {
+            height: 100px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+
+
+
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+</style>
