@@ -27,7 +27,13 @@ body{
 .navtext{
     color: #7091AB;
 }
-
+.social-media{
+    padding: 15px;
+    background: blue;
+    border: 2px solid blue;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px 5px 0.01px;
+}
 
 .card:hover{
     box-shadow: 0.2px 0.3px  10px 7px rgb(136, 132, 132);
@@ -37,7 +43,10 @@ body{
 
 
 }
-
+.social-media{
+    margin: 0%;
+    padding: 0%;
+}
 
 a{
     color: cadetblue;
